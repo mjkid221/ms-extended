@@ -2,7 +2,14 @@
   "name": "ms-extended",
   "version": "0.1.0",
   "description": "Milliseconds utility library extended with non-millisecond utilities",
-  "main": "index.js",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -27,5 +34,13 @@
     "eslint-plugin-prettier": "^5.2.1",
     "tsx": "^4.19.2",
     "typescript": "^5.7.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjkid221/ms-extended.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mjkid221/ms-extended/issues"
+  },
+  "homepage": "https://github.com/mjkid221/ms-extended#readme"
 }
